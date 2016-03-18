@@ -31,3 +31,16 @@ function sumArray(theArray) {
   console.log(theArray + ' was passed in as an array of numbers and ' + sumTotal + ' is their sum.');
   return sumTotal;
 }
+console.log(sumArray([2,3,4]));
+
+function multiplyArray(theArray) {
+  productTotal = 1;
+  for (i = 0; i < theArray.length; i++){
+    currentNumber = theArray[i];
+    productTotal *= currentNumber;
+  }
+  console.table(theArray);
+  console.log('The numbers ' + theArray + ' have a product of ' + productTotal + '.');
+  return productTotal;
+}
+console.log(multiplyArray([2,3,4]));
